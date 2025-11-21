@@ -69,7 +69,7 @@ Resultado: todos os elementos relevantes, mesmo os renderizados tardiamente, rec
 1. Copie o módulo para:
 
 ```
-app/code/DevAlicia2/ThemeConfig
+src/app/code --> app/code/DevAlicia2/ThemeConfig
 ```
 
 2. Execute os comandos:
