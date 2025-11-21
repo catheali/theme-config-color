@@ -1,0 +1,17 @@
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var $viewModel \DevAlicia2\ThemeConfig\ViewModel\ColorConfig */
+$viewModel = $block->getData('view_model');
+$color = $viewModel->getPrimaryColor();
+?>
+<?php if ($color): ?>
+    <script type="text/x-magento-init">
+    {
+        "*": {
+            "DevAlicia2_ThemeConfig/js/apply-color": {
+                "color": "<?= $block->escapeJs($color) ?>"
+            }
+        }
+    }
+    </script>
+<?php endif; ?>
